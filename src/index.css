@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    * {
+        font-family: 'Sen', sans-serif;
+    }
+}
+
