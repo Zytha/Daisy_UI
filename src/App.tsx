@@ -18,7 +18,7 @@ export default function App() {
             <div class="flex flex-col justify-center items-center h-screen p-8">
                 <div class="bg-[#172028] p-12 rounded-2xl">
                     <div class={toggle() ? " alert alert-info" : "alert"}>
-                        <span class="text-2xl">
+                        <span class="text-center text-2xl">
                             {toggle() ? "Enabled" : "Disabled"}
                         </span>
                     </div>
