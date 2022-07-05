@@ -7,7 +7,7 @@
 @layer base {
 
     * {
-        font-family: 'Sen', sans-serif;
+        @apply font-[Sen] text-2xl
     }
 }
 

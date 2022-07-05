@@ -15,18 +15,20 @@ export default function App() {
 
     return (
         <>
-            <div class="flex flex-col justify-center items-center h-screen p-8">
+            <div class="flex flex-col justify-center items-center h-screen">
                 <div class="bg-[#172028] p-12 rounded-2xl">
-                    <div class={toggle() ? " alert alert-info" : "alert"}>
-                        <span class="text-center text-2xl">
-                            {toggle() ? "Enabled" : "Disabled"}
-                        </span>
+                    <div
+                        class={
+                            toggle()
+                                ? "alert alert-info justify-center"
+                                : "alert justify-center"
+                        }
+                    >
+                        {toggle() ? "Enabled" : "Disabled"}
                     </div>
 
                     <div class="flex justify-center items-center gap-4 p-4 pb-0">
-                        <label for="toggle" class="text-2xl">
-                            Toggle
-                        </label>
+                        <label for="toggle">Toggle</label>
                         <input
                             type="checkbox"
                             class="toggle toggle-lg"
