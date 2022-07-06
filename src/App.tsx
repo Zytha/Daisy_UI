@@ -2,6 +2,7 @@ import { createSignal } from "solid-js";
 
 export default function App() {
     const [toggle, setToggle] = createSignal(true);
+    var number: number = 1;
 
     function handleChange(e) {
         let isChecked = e.target.checked;
@@ -15,7 +16,7 @@ export default function App() {
 
     return (
         <>
-            <div class="flex flex-col justify-center items-center h-screen">
+            <div class="flex flex-col justify-center items-center h-screen mx-8">
                 <div class="bg-[#172028] p-12 rounded-2xl">
                     <div
                         class={
@@ -36,6 +37,32 @@ export default function App() {
                             checked
                         />
                     </div>
+                </div>
+                <div class="btm-nav">
+                    <button
+                        class="text-info"
+                        onclick={(e) => {
+                            number = 0;
+                        }}
+                    >
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </button>
+                    <button
+                        class="text-info active"
+                        onclick={(e) => {
+                            number = 1;
+                        }}
+                    >
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <button
+                        class="text-info"
+                        onclick={(e) => {
+                            number = 2;
+                        }}
+                    >
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </button>
                 </div>
             </div>
         </>
